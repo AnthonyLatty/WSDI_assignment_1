@@ -9,13 +9,9 @@
 <?php include '../shared/navbar_template.php' ?>
 
 <!-- section intro -->
-<section id="intro">
-    <ul id="slippry-slider">
-        <li>
-            <img src="../assets/img/slide/2.jpg">
-        </li>
-    </ul>
-</section>
+
+    <img src="../assets/img/slide/2.jpg" style="height: 500px;width: 100%">
+
 <!-- end intro -->
 
 <!-- Section about -->

@@ -7,7 +7,6 @@
 <body>
 <!-- navbar -->
 <?php include '../shared/navbar_template.php' ?>
-<br><br><br>
 
 <!-- section contact -->
 <section id="contact" class="section">
@@ -29,34 +28,45 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <!-- start contact form -->
+                <!-- start product form -->
                 <div class="cform" id="contact-form">
-                    <form action="" method="post" role="form" class="contactForm">
+                    <form action="product_valid.php" method="post" role="form" class="contactForm">
                         <div class="form-group">
+                            <label>Product Name</label>
                             <input type="text" name="product_name" class="form-control" title="Enter Product Name" placeholder="Product Name" required />
                         </div>
                         <div class="form-group">
-                            <input type="number" class="form-control" name="product_code" title="Enter Product Code" placeholder="Product Code" required/>
+                            <label>Product Code</label>
+                            <input type="number" min="1" class="form-control" name="product_code" title="Enter Product Code" placeholder="Product Code" required />
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="manufacturer" title="Enter Manufacturer" placeholder="Manufacturer" required/>
+                            <label>Manufacturer</label>
+                            <input type="text" class="form-control" name="manufacturer" title="Enter Manufacturer" placeholder="Manufacturer" required />
                         </div>
                         <div class="form-group">
-                            <input type="date" class="form-control" name="manufacturer_date" title="Enter Manufacturer Date" placeholder="Manufacturer Date" required/>
+                            <label>Manufacturer Date</label>
+                            <input type="date" class="form-control" name="manufacturer_date" title="Enter Manufacturer Date" placeholder="Manufacturer Date" required />
                         </div>
                         <div class="form-group">
-
+                            <label for="products">Product Type</label>
+                            <select class="form-control" name="product_types">
+                                <option value="0">Select a product</option>
+                                <option value="1">MacBook Pro 2020</option>
+                                <option value="2">Dell XPS 15</option>
+                                <option value="3">iMac Pro 2020</option>
+                                <option value="4">Dell XPS Developer Edition</option>
+                            </select>
                         </div>
                         <div class="form-group">
+                            <label>Product Description</label>
                             <textarea class="form-control" rows="3" name="product_description" title="Enter Product Description" placeholder="Product Description" required></textarea>
                         </div>
-
                         <div class="text-center">
-                            <button type="submit" class="btn btn-lg btn-theme">Send Message</button>
+                            <button type="submit" name="btnSaveProductInfo" class="btn btn-lg btn-theme">Save</button>
                         </div>
                     </form>
                 </div>
-                <!-- END contact form -->
+                <!-- END product form -->
             </div>
         </div>
     </div>

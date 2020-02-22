@@ -14,7 +14,7 @@
         <img src="../assets/img/slide/1.jpg">
       </li>
       <li>
-        <img src="../assets/img/slide/2.jpg">
+        <img src="../assets/img/slide/3.jpg">
       </li>
     </ul>
   </section>

@@ -29,6 +29,9 @@
                             <li>
                                 <a href="../views/product_info.php">Product Info</a>
                             </li>
+                            <li>
+                                <a href="../views/costing_info.php">Costing Info</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -37,4 +40,5 @@
         </div>
     </div>
 </header>
+<br><br><br>
 </html>
