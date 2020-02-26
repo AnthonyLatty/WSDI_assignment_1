@@ -33,15 +33,15 @@
                     <form action="cost_valid.php" method="post" role="form" class="contactForm">
                         <div class="form-group">
                             <label>Product Price</label>
-                            <input type="number" name="product_price" class="form-control" title="Enter Cost Price" placeholder="Product Price" required />
+                            <input type="number" min="1" name="product_price" class="form-control" title="Enter Cost Price" placeholder="Product Price" required />
                         </div>
                         <div class="form-group">
                             <label>Sales Price</label>
-                            <input type="number" name="sales_price" class="form-control" title="Enter Sales Price" placeholder="Sales Price" required />
+                            <input type="number" min="1" name="sales_price" class="form-control" title="Enter Sales Price" placeholder="Sales Price" required />
                         </div>
                         <div class="form-group">
                             <label>Quantity in Stock</label>
-                            <input type="number" name="quantity_in_stock" class="form-control" title="Enter Quantity in Stock" placeholder="Quantity in Stock" required />
+                            <input type="number" min="1" name="quantity_in_stock" class="form-control" title="Enter Quantity in Stock" placeholder="Quantity in Stock" required />
                         </div>
 
                         <div class="text-center">

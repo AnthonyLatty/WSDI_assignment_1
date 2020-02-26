@@ -62,7 +62,9 @@
                             <textarea class="form-control" rows="3" name="product_description" title="Enter Product Description" placeholder="Product Description" required></textarea>
                         </div>
                         <div class="text-center">
-                            <button type="submit" name="btnSaveProductInfo" class="btn btn-lg btn-theme">Save</button>
+                            <form action="register_product.php" method="post">
+                                <button type="submit" name="btnSaveProductInfo" class="btn btn-lg btn-theme">Save</button>
+                            </form>
                         </div>
                     </form>
                 </div>
